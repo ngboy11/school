@@ -1,0 +1,11 @@
+/* public/css/style.css */
+body { font-family: Arial, sans-serif; background:#f5f7fb; margin:0; color:#222;}
+.container { max-width:1000px; margin:30px auto; padding:20px; }
+.topbar { display:flex; justify-content:space-between; align-items:center; padding:10px 20px; background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+.panel { background:#fff; padding:16px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.06); border-radius:6px;}
+input, textarea, select { display:block; width:100%; padding:8px; margin:8px 0; border-radius:4px; border:1px solid #ddd; }
+button { padding:10px 14px; border:none; background:#2b6cff; color:#fff; border-radius:6px; cursor:pointer; }
+table { width:100%; border-collapse:collapse; margin-top:12px; }
+thead th { text-align:left; padding:8px; border-bottom:1px solid #eee; }
+tbody td { padding:8px; border-bottom:1px solid #f0f0f0; }
+.small { font-size:0.9em; color:#666; }

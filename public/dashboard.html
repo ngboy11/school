@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard — School Automation</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <h2>School Automation</h2>
+    <div id="userInfo"></div>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <div class="container">
+    <div class="panel">
+      <h3>Add Student</h3>
+      <form id="addStudentForm">
+        <input name="name" placeholder="Student name" required>
+        <input name="roll" placeholder="Roll no" required>
+        <select name="class" required id="classSelect"></select>
+        <select name="section" required>
+          <option>A</option><option>B</option><option>C</option><option>D</option>
+        </select>
+        <textarea name="notes" placeholder="Notes"></textarea>
+        <button type="submit">Add Student</button>
+      </form>
+      <div id="addMsg"></div>
+    </div>
+
+    <div class="panel">
+      <h3>Students</h3>
+      <input id="search" placeholder="Search name or roll">
+      <select id="filterClass"><option value="">All classes</option></select>
+      <select id="filterSection"><option value="">All sections</option><option>A</option><option>B</option><option>C</option><option>D</option></select>
+      <button id="filterBtn">Filter</button>
+      <table id="studentsTable">
+        <thead><tr><th>Roll</th><th>Name</th><th>Class</th><th>Section</th><th>Attendance</th><th>Notes</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

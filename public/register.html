@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>School Automation — Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form id="registerForm">
+      <input name="name" placeholder="Full name" required>
+      <input name="email" placeholder="Email" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <select name="role" required>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="/">Login</a></p>
+    <div id="msg"></div>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
